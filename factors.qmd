@@ -411,9 +411,9 @@ Read the documentation to learn about `fct_lump_min()` and `fct_lump_prop()` whi
 
 Before we continue, it's important to briefly mention a special type of factor: ordered factors.
 Created with the `ordered()` function, ordered factors imply a strict ordering between levels, but don't specify anything about the magnitude of the differences between the levels.
-You use ordered factors when you know there the levels are ranked, but there's no precise numerical ranking.
+You use ordered factors when you know that levels are ranked, but there's no precise numerical ranking.
 
-You can identify an ordered factor when its printed because it uses `<` symbols between the factor levels:
+You can identify an ordered factor when it's printed because it uses `<` symbols between the factor levels:
 
 ```{r}
 ordered(c("a", "b", "c"))

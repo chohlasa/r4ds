@@ -434,8 +434,8 @@ You can use rounding to show the distribution of flights across the course of a 
 #|   A line plot with depature time on the x-axis. This is units of seconds
 #|   since midnight so it's hard to interpret.
 flights_dt |> 
-  mutate(dep_hour = dep_time - floor_date(dep_time, "day")) |> 
-  ggplot(aes(x = dep_hour)) +
+  mutate(dep_second = dep_time - floor_date(dep_time, "day")) |> 
+  ggplot(aes(x = dep_second)) +
   geom_freqpoly(binwidth = 60 * 30)
 ```
 
